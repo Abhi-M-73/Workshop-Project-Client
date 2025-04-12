@@ -1,11 +1,19 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+@import "tailwindcss";
+
+.button {
+  @apply bg-[#005fc4] text-white font-bold py-2 px-4 rounded cursor-pointer
+   hover:bg-[#004b9e] transition duration-300 ease-in-out border-none;
 }
 
-body{
-  background-color: #f0f0f0;
-  color: #333;
+.input {
+  @apply border-2 border-gray-300 rounded-md p-2 w-full outline-none
+    focus:ring-2 focus:ring-[#005fc4] transition duration-300 ease-in-out;
+}
+
+.flexX {
+  @apply flex items-center justify-center;
+}
+
+.flexY {
+  @apply flex flex-col items-center justify-center;
 }
