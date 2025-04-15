@@ -1,6 +1,13 @@
 import React from 'react';
+import { useEffect } from 'react';
+import {io} from 'socket.io-client';
 
 const Chat = () => {
+
+    useEffect(()=> {
+        io('http://localhost:3000')
+    }, []);
+
     return (
         <div className="bg-white w-full max-w-3xl mx-auto rounded-2xl shadow-md flex flex-col h-full">
             <div className="border-b border-gray-200 p-4">
